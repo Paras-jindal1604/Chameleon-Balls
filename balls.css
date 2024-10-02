@@ -1,0 +1,73 @@
+
+/* transform : translateX(90vh) to move in x axis */
+/* yahan pe display: flex;
+flex-direction: column; kiya so that all balls y-axis pe one below another hojye
+then justify-content :center; kiya so that beech mei aajye balls. 
+justify is for :horizontal axid but flex-direction column se ab y-axis hi :horizontal ban gyi hai. */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    background-color: black;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding-left: 20px;
+   
+}
+
+.ball{
+    width: 100px;
+    aspect-ratio: 1;
+    background-color: rgb(59, 26, 180);
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 10px rgb(241, 131, 149);
+  
+    transition: all 5s;
+}
+
+.ball:nth-child(1):hover{
+    transition: 5s ease-in-out;
+    transform: translateX(90vw);
+    background-color: red;
+}
+
+.ball:nth-child(2):hover{
+    transition: 5s linear;
+    transform: translateX(90vw);
+    background-color: rgb(0, 255, 13);
+}
+
+.ball:nth-child(3):hover{
+    transition: 5s ease-in;
+    transform: translateX(90vw);
+    background-color: rgb(255, 0, 255);
+}
+
+.ball:nth-child(4):hover{
+    transition: 5s ease-out;
+    transform: translateX(90vw);
+    background-color: rgb(0, 255, 179);
+}
+
+.ball:nth-child(5):hover{
+    transition: 5s ease;
+    transform: translateX(90vw);
+    background-color: rgb(255, 94, 0);
+}
+
+
